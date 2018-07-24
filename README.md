@@ -69,7 +69,7 @@ Specification:
 
     - Create the naive class DateI18NEnum using a class enum for 3 different date formats: YMD, DMY, and MDY. Read up on C++11 class enums if you are not familiar already.  
 
-    - Once this is working, duplicate the project code to start your DateI18N project. Apply the Strategy and/or Template Method patterns to help make the code easier to modify. 
+    - Once this is working, duplicate the project code to start your DateI18N project. Apply the Strategy and Template Method patterns to help make the code easier to modify. 
 
     - Add the new YDM format to both DateI18NEnum and DateI18N projects, noting the places where you had to modify your implementation to handle the new format.  
 
