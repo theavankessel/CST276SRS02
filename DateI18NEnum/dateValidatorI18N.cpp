@@ -95,6 +95,34 @@ bool DateValidatorI18N::is_good(std::string const date) const
 		}
 		break;
 
+		//Added to incorporate YDM
+		case Format::YDM:
+		{
+			while (std::getline(dateStream, segment, '/'))
+			{
+				seglist.push_back(segment);
+			}
+
+			if (seglist.size() != 3)
+			{
+				valid = false;
+			}
+
+			auto year = stoi(seglist[0]);
+			auto day = stoi(seglist[1]);
+			auto month = stoi(seglist[2]);
+
+			if (month < 1 || month > 12 || day < 1 || day > 31 || year < 1000 || year > 9999)
+			{
+				valid = false;
+			}
+			else
+			{
+				valid = true;
+			}
+		}
+		break;
+
 		default:
 		{
 			assert(false);

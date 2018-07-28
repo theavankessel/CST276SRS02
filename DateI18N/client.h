@@ -5,6 +5,7 @@
 #include "YMD.h"
 #include "MDY.h"
 #include "DMY.h"
+#include "YDM.h"
 
 class Client
 {
@@ -16,6 +17,7 @@ private:
 	YMD ymd_;
 	MDY mdy_;
 	DMY dmy_;
+	YDM ydm_;
 	std::string date_;
 
 };
