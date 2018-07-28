@@ -18,6 +18,4 @@ private:
 	MDY mdy_;
 	DMY dmy_;
 	YDM ydm_;
-	std::string date_;
-
 };
